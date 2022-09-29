@@ -1,0 +1,54 @@
+.banner
+{
+  background-image: url('../../../assets/img/vino6.jpg');
+  height: 850px;
+  background-position: center top;
+  background-size: cover;
+}
+.content{
+  top: 30%;
+  left: 20%;
+  position: absolute;
+}
+.content h1
+{
+  line-height: 1.2;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+.content a{
+  text-decoration: none;
+  background-color: #fff;
+  color: rgb(70, 5, 30);
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
+.content a :hover
+{
+  background-color: #162328;
+  color: #fff;
+}
+.stepBox{
+  background-color: #000;
+  padding: 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.stepBox h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: #f1f1f1
+}
+.stepBox p{
+  font-size: 20px;
+  font-style: italic;
+  color: #fff;
+}
+.highlight{
+  color:black;
+  font-weight:bold;
+  font-style: italic;
+}

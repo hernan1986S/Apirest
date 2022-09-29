@@ -1,0 +1,14 @@
+.container{
+  background: url(../../../assets/img/vino4.jpg) no-repeat ;
+  overflow: hidden;
+  border: 1px solid ;
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+}
+h2{
+  color: dimgray;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 500;
+}

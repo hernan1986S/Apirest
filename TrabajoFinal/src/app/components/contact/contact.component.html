@@ -1,0 +1,39 @@
+<form [formGroup]="formularioContacto" (ngSubmit)="enviarContacto">
+  <div class="container">
+    <h1>Bienvenido de nuevo</h1>
+    <h2>Gracias por volver a tu sitio favorito, por favor llenar el formulario.</h2>
+    <label>Nombre:</label>
+  <input type="text" formControlName="nombre">
+  <p *ngIf="formularioContacto.get('nombre')?.errors?.['required']">Este campo es obligatorio</p>
+  <br>
+
+  <label>Apellido:</label>
+  <input type="text" formControlName="apellido">
+  <p *ngIf="formularioContacto.get('apellido')?.errors?.['required']">Este campo es obligatorio</p>
+  <br>
+
+  <label>Pais:</label>
+  <input type="text" formControlName="pais">
+  <p *ngIf="formularioContacto.get('pais')?.errors?.['required']">Este campo es obligatorio</p>
+  <br>
+
+  <label>Email*:</label>
+  <input type="text" formControlName="email">
+  <p *ngIf="formularioContacto.get('email')?.errors?.['required']">Este campo es obligatorio</p>
+  <p *ngIf="formularioContacto.get('email')?.errors?.['email']">Este campo es obligatorio</p>
+  <br>
+
+  <label>Contraseña*:</label>
+  <input type="password" formControlName="contraseña">
+  <p *ngIf="formularioContacto.get('contraseña')?.errors?.['required']">Este campo es obligatorio</p>
+  <br>
+
+  <label>Mensaje:</label>
+  <input type="text" formControlName="mensaje">
+  <br>
+
+  <button type="submit" [disabled]="!formularioContacto.valid">Enviar</button>
+  <button class="login-form-buttons_signup">Registrarse</button>
+  </div>
+</form>
+
